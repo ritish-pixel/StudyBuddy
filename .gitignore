@@ -1,0 +1,12 @@
+# Compiled program
+StudyTrack.exe
+StudyTrack
+
+# Temporary files
+*.o
+*.obj
+
+# VS Code workspace settings
+.vscode/
+
+# Keep source code, README, and gitignore tracked
