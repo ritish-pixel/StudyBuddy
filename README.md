@@ -1,73 +1,80 @@
 
 # StudyTrack — Student Task Planner
 
-StudyTrack is a beginner-friendly, menu-driven task management application developed in C. It helps students organize academic tasks, track completion progress, and save their tasks for future use.
+StudyTrack is a menu-driven student task planner developed using the C programming language. It helps students organize academic tasks, manage priorities, track completion progress, and save their tasks for future use.
 
 ## Features
 
 - **Add Tasks:** Create tasks with a title, subject, and priority.
-- **View Tasks:** Display all saved tasks with their details and status.
-- **Unique Task IDs:** Assign a unique ID to each new task.
-- **Mark as Completed:** Update the status of a task when it is finished.
-- **Search Tasks:** Find a task using its exact title.
-- **Progress Summary:** View total, completed, and pending tasks along with the completion percentage.
-- **Delete Tasks:** Remove tasks that are no longer needed.
+- **View Tasks:** Display all tasks with their details and status.
+- **Unique Task IDs:** Assign a unique ID to each task.
+- **Complete Tasks:** Mark tasks as completed.
+- **Search Tasks:** Find tasks using their exact title.
+- **Progress Summary:** View total, completed, and pending tasks with a completion percentage.
+- **Delete Tasks:** Remove tasks by their ID.
 - **File Handling:** Save tasks to `tasks.txt` and load them when the program starts.
-- **Input Validation:** Handle invalid menu choices, numeric inputs, and task priorities.
+- **Input Validation:** Handle invalid menu choices and task priorities.
+
+## Screenshots
+
+### 1. Main Menu
+
+The main menu provides access to all the features of StudyTrack.
+
+![StudyTrack Main Menu](Screenshots/main-menu.png)
+
+### 2. Add a Task
+
+Create a task by entering its title, subject, and priority.
+
+![Adding a Task](Screenshots/add-task.png)
+
+### 3. View Tasks
+
+View task details, including their IDs, subjects, priorities, and completion statuses.
+
+![Viewing Tasks](Screenshots/view-task.png)
+
+### 4. Search Tasks
+
+Search for a task using its exact title.
+
+![Searching for a Task](Screenshots/search-task.png)
+
+### 5. Complete a Task
+
+Mark a task as completed using its unique Task ID.
+
+![Completing a Task](Screenshots/complete-task.png)
+
+### 6. Delete a Task
+
+Delete a task using its Task ID.
+
+![Deleting a Task](Screenshots/delete-task.png)
+
+### 7. Progress Summary
+
+Track the total number of tasks, completed tasks, pending tasks, and completion percentage.
+
+![Progress Summary](Screenshots/review-task.png)
+
+### 8. Save and Exit
+
+Exit the application after saving the task data.
+
+![Exiting StudyTrack](Screenshots/exit.png)
 
 ## Technologies Used
 
 - C Programming Language
-- Standard C Library
-- File Handling
+- GCC Compiler
 - Visual Studio Code
-
-## Project Structure
-
-```text
-StudyTrack/
-├── main.c
-├── tasks.txt
-└── README.md
-```
-
-`tasks.txt` is created by the program when tasks are saved. It stores task information so it can be loaded during a future run.
-
-## How to Run
-
-### 1. Install a C compiler
-
-Install GCC or another compatible C compiler and make sure it is available in your terminal.
-
-### 2. Open the project folder
-
-Open the StudyTrack folder in Visual Studio Code.
-
-### 3. Compile the program
-
-Using GCC, run:
-
-```bash
-gcc main.c -o StudyTrack
-```
-
-### 4. Run the program
-
-On Windows:
-
-```powershell
-.\StudyTrack.exe
-```
-
-On Linux:
-
-```bash
-./StudyTrack
-```
+- Git and GitHub
 
 ## Concepts Practiced
 
-This project helped me practice:
+This project applies the following C programming concepts:
 
 - Structures (`struct`)
 - Arrays and strings
@@ -75,23 +82,63 @@ This project helped me practice:
 - Loops and conditional statements
 - String comparison using `strcmp()`
 - Input validation
-- File operations using `fopen()`, `fgets()`, `fprintf()`, and `fclose()`
-- Basic data validation and task management logic
+- File handling using `fopen()`, `fgets()`, `fprintf()`, and `fclose()`
+
+## Project Structure
+
+```text
+STUDYBUDDY/
+├── Screenshots/
+│   ├── add-task.png
+│   ├── complete-task.png
+│   ├── delete-task.png
+│   ├── exit.png
+│   ├── main-menu.png
+│   ├── review-task.png
+│   ├── search-task.png
+│   └── view-tasks.png
+├── main.c
+├── README.md
+├── .gitignore
+└── tasks.txt
+```
+
+## How to Run
+
+### Prerequisites
+
+Install GCC or another compatible C compiler and ensure it is available in your terminal.
+
+### Compile the program
+
+Open the project folder in VS Code and run:
+
+```bash
+gcc main.c -o StudyTrack.exe
+```
+
+### Run on Windows
+
+```powershell
+.\StudyTrack.exe
+```
+
+The program stores task information in `tasks.txt` so that saved tasks can be loaded during a future run.
 
 ## Future Improvements
 
-- Add task due dates and deadlines.
+- Add task deadlines and due dates.
 - Sort tasks by priority.
 - Search tasks by subject.
 - Add overdue-task reminders.
-- Improve the interface and task filtering options.
+- Improve task filtering and the user interface.
 
 ## Learning Outcome
 
-StudyTrack is a practical project for applying fundamental C programming concepts to a useful student-focused application. It provides experience in program structure, input handling, data management, and persistent file storage.
+Building StudyTrack helped me practise fundamental C programming concepts by applying them to a practical student task management application. It provided experience with functions, structures, input validation, and persistent file storage.
 
 ---
 
 **Project:** StudyTrack — Student Task Planner  
 **Language:** C  
-**Level:** Beginner
+**Project Level:** Beginner
